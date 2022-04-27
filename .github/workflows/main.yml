@@ -1,11 +1,8 @@
 name: Ruby
 
 on:
-  push:
-    branches:
-      - master
-
-  pull_request:
+  - push
+  - pull_request
 
 jobs:
   build:
@@ -24,4 +21,7 @@ jobs:
         ruby-version: ${{ matrix.ruby }}
         bundler-cache: true
     - name: Run the default task
-      run: bundle exec rake
+      run: |
+        gem install bundler -v 2.2.15
+        bundle install
+        bundle exec rake
