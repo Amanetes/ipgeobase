@@ -1,4 +1,6 @@
-# Ipgeobase
+[![Ruby](https://github.com/Amanetes/ipgeobase/actions/workflows/main.yml/badge.svg)](https://github.com/Amanetes/ipgeobase/actions/workflows/main.yml)
+
+# Ipgeobase 
 
 This gem allows you to get information by IP - e.g. country, city, coordinates.
 
