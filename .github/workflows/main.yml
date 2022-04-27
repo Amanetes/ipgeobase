@@ -22,6 +22,6 @@ jobs:
         bundler-cache: true
     - name: Run the default task
       run: |
-        gem install bundler -v 2.2.15
+        gem install bundler -v 2.3.12
         bundle install
         bundle exec rake
