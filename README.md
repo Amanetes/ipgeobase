@@ -14,7 +14,7 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
 ## Usage
 
-```
+```ruby
 ip_meta = Ipgeobase.lookup('8.8.8.8')
 ip_meta.city # Ashburn
 ip_meta.country # United States
