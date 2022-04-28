@@ -7,11 +7,11 @@ gemspec
 
 group :production do
   gem 'addressable'
+  gem 'nokogiri-happymapper', require: 'happymapper'
   gem 'rake'
 end
 
 group :development do
-  gem 'nokogiri-happymapper', require: 'happymapper'
   gem 'rubocop'
 end
 
