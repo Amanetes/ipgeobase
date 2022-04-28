@@ -11,9 +11,11 @@ module Ipgeobase
 
   def self.lookup(ip)
     uri = Addressable::URI.parse("http://ip-api.com/xml/#{ip}")
-    response = Net::HTTP.get_response(uri)
+    begin
+      response = Net::HTTP.get_response(uri)
+    rescue StandardError
+      false
+    end
     Address.parse(response.body)
-  rescue StandardError
-    raise 'Failed to receive data!'
   end
 end
